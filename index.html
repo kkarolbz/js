@@ -1,8 +1,18 @@
+<!DOCTYPE html>
 <html>
 <head>
   <script type="text/javascript">
-      var liczba=12;
-    </script>  
+      var liczba=13;
+ var liczba1=14;
+  var obrazek=new Image();
+    var obrazek2=new Image();
+    
+  
+    
+ </script>  
+ 
+  
+  
   
   
 </head>
@@ -10,12 +20,36 @@
   
 <body>
   <div id="wynik"> </div>
-  <script type="text/javascript">
-  
+   <div id="wynik2"> </div>
+  <div>
+    najedź na obrazek
+  </div>
+  <img id="imga" src="https://img.pakamera.net/i1/1/379/obrazy-i-plakaty-12320957_6788571379.jpg">
+ 
+    <script type="text/javascript">
+
     document.getElementById("wynik").innerHTML=liczba;
+    document.getElementById("wynik2").innerHTML=liczba1;
+    
+    
+    
+
+    obrazek.src = 'https://img.pakamera.net/i1/1/379/obrazy-i-plakaty-12320957_6788571379.jpg';
+
+    
+      obrazek2.src = 'https://www.naklejkolandia.pl/galerie/p/piesek-18_9139.jpg';
+    
+
   
-  
-  
+
+
+      
+    var img = document.getElementById('imga');
+    img.addEventListener('mouseout', function() {this.src = obrazek.src});
+img.addEventListener('mouseover', function() {this.src = obrazek2.src});
+
+
+    
   </script>  
   
 </body>
