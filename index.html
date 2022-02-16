@@ -2,14 +2,17 @@
 <html>
 <head>
   <script type="text/javascript">
-      var liczba=13;
- var liczba1=14;
-  var obrazek=new Image();
-    var obrazek2=new Image();
-    
+var liczba=13;
+var liczba1=14;
+var obrazek=new Image();
+var obrazek2=new Image();
+var foto = new Image();
   
-    
- </script>  
+  
+  
+  
+  
+  </script>  
  
   
   
@@ -21,36 +24,51 @@
 <body>
   <div id="wynik"> </div>
    <div id="wynik2"> </div>
-  <div>
-    najedź na obrazek
+  <div id="im">
+    najedź na obrazek-->><img id="imga" src = "https://sklepdrogowy.pl/userdata/public/gfx/be1c13f5782322a4939ca99f0497c7ee.jpg">
   </div>
-  <img id="imga" src="https://sklepdrogowy.pl/userdata/public/gfx/be1c13f5782322a4939ca99f0497c7ee.jpg">
+
  
-    <script type="text/javascript">
+ 
+ <script type="text/javascript">
 
     document.getElementById("wynik").innerHTML=liczba;
     document.getElementById("wynik2").innerHTML=liczba1;
     
     
-    
+      
 
-    obrazek.src = 'https://sklepdrogowy.pl/userdata/public/gfx/be1c13f5782322a4939ca99f0497c7ee.jpg';
-
-    
-      obrazek2.src = 'https://sklepdrogowy.pl/userdata/public/gfx/7d21d59123e1d3dbdc95e05a4617d5a1.jpg';
-    
-
+obrazek.src = 'https://sklepdrogowy.pl/userdata/public/gfx/be1c13f5782322a4939ca99f0497c7ee.jpg';
+obrazek2.src = 'https://sklepdrogowy.pl/userdata/public/gfx/7d21d59123e1d3dbdc95e05a4617d5a1.jpg';
   
 
+   var img = document.getElementById('imga');
 
-      
-    var img = document.getElementById('imga');
-    img.addEventListener('mouseout', function() {this.src = obrazek.src});
+img.addEventListener('mouseout', function() {this.src = obrazek.src});
 img.addEventListener('mouseover', function() {this.src = obrazek2.src});
 
-
-    
+ 
+  
+  
+  
   </script>  
   
-</body>
-</html>
+  
+  <button id="add">kliknij w to</button>
+
+<p id="demo"></p>
+<h1 id="demo2"></h1>
+ <script>
+  
+   const element = document.getElementById("add");
+element.addEventListener("click", funkcja);
+   
+function funkcja() {
+  document.getElementById("demo").innerHTML = "wynik";
+  document.getElementById("demo2").innerHTML = "wynik";
+
+  
+}
+</script>
+  
+  
